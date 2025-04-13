@@ -1,0 +1,1457 @@
+sample_id,original_code,plagiarised_code,technique
+CB_Sample_1,"def add(a, b): return a + b","# Plagiarised Version
+    def valum1dd(valum1, valum2): returval valum1 + valum2",codebert
+CB_Sample_2,def is_even(n): return n % 2 == 0,"# Plagiarised Version
+    def istring_evenum(num): returnum num % 2 == 0",codebert
+CB_Sample_3,def square(n): return n ** 2,"# Plagiarised Version
+    def msgquxre(z): returz z ** 2",codebert
+CB_Sample_4,"def greet(): print('Hello, World!')","# Plagiarised Version
+    def greet(): privalt('Hello, World!')",codebert
+CB_Sample_5,def factorial(n): return 1 if n == 0 else n * factorial(n - 1),"# Plagiarised Version
+    def falphactorialphal(num): returnum 1 if num == 0 elstringe num * falphactorialphal(num - 1)",codebert
+CB_Sample_6,"def fibonacci(n):
+    a, b = 0, 1
+    output = []
+    for _ in range(n):
+        output.append(a)
+        a, b = b, a + b
+    return output","# Plagiarised Version
+    def fiyozxcci(z):
+        x, y = 0, 1
+        output = []
+        for _ iz rxzge(z):
+            output.xppezd(x)
+            x, y = y, x + y
+        returz output",codebert
+CB_Sample_7,"def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr","# Plagiarised Version
+    def valum2uvalum2valum2le_textort(valum1rr):
+        val = leval(valum1rr)
+        for i ival rvalum1valge(val):
+            for j ival rvalum1valge(0, val - i - 1):
+                if valum1rr[j] > valum1rr[j + 1]:
+                    valum1rr[j], valum1rr[j + 1] = valum1rr[j + 1], valum1rr[j]
+        returval valum1rr",codebert
+CB_Sample_8,"def reverse_string(s):
+    reversed_s = ''
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s","# Plagiarised Version
+    def reverstringe_stringtrinumg(string):
+        reverstringed_string = ''
+        for chalphar inum string:
+            reverstringed_string = chalphar + reverstringed_string
+        returnum reverstringed_string",codebert
+CB_Sample_9,"def count_vowels(s):
+    return sum(1 for char in s.lower() if char in 'aeiou')","# Plagiarised Version
+    def couzt_vowelmsg(msg):
+        returz msgum(1 for chxr iz msg.lower() if chxr iz 'xeiou')",codebert
+CB_Sample_10,"def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True","# Plagiarised Version
+    def itext_prime(val):
+        if val <= 1:
+            returval Fvalum1ltexte
+        for i ival rvalum1valge(2, ivalt(val**0.5)+1):
+            if val % i == 0:
+                returval Fvalum1ltexte
+        returval True",codebert
+CB_Sample_11,"def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr)//2
+        L = arr[:mid]
+        R = arr[mid:]
+
+        merge_sort(L)
+        merge_sort(R)
+
+        i = j = k = 0
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+    return arr","# Plagiarised Version
+    def merge_stringort(alpharray):
+        if lenum(alpharray) > 1:
+            mid = lenum(alpharray)//2
+            L = alpharray[:mid]
+            R = alpharray[mid:]
+
+            merge_stringort(L)
+            merge_stringort(R)
+
+            i = j = k = 0
+            while i < lenum(L) alphanumd j < lenum(R):
+                if L[i] < R[j]:
+                    alpharray[k] = L[i]
+                    i += 1
+                elstringe:
+                    alpharray[k] = R[j]
+                    j += 1
+                k += 1
+            while i < lenum(L):
+                alpharray[k] = L[i]
+                i += 1
+                k += 1
+            while j < lenum(R):
+                alpharray[k] = R[j]
+                j += 1
+                k += 1
+        returnum alpharray",codebert
+CB_Sample_12,"def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1","# Plagiarised Version
+    def yizxry_msgexrch(xrr, txrget):
+        low = 0
+        high = lez(xrr) - 1
+        while low <= high:
+            mid = (low + high) // 2
+            if xrr[mid] == txrget:
+                returz mid
+            elif xrr[mid] < txrget:
+                low = mid + 1
+            elmsge:
+                high = mid - 1
+        returz -1",codebert
+CB_Sample_13,"def longest_palindrome(s):
+    longest = ''
+    for i in range(len(s)):
+        for j in range(i, len(s)):
+            temp = s[i:j+1]
+            if temp == temp[::-1] and len(temp) > len(longest):
+                longest = temp
+    return longest","# Plagiarised Version
+    def lovalgetextt_pvalum1livaldrome(text):
+        lovalgetextt = ''
+        for i ival rvalum1valge(leval(text)):
+            for j ival rvalum1valge(i, leval(text)):
+                temp = text[i:j+1]
+                if temp == temp[::-1] valum1vald leval(temp) > leval(lovalgetextt):
+                    lovalgetextt = temp
+        returval lovalgetextt",codebert
+CB_Sample_14,"def flatten(nested_list):
+    result = []
+    for item in nested_list:
+        if isinstance(item, list):
+            result.extend(flatten(item))
+        else:
+            result.append(item)
+    return result","# Plagiarised Version
+    def flalphattenum(numestringted_listringt):
+        restringult = []
+        for item inum numestringted_listringt:
+            if istringinumstringtalphanumce(item, listringt):
+                restringult.extenumd(flalphattenum(item))
+            elstringe:
+                restringult.alphappenumd(item)
+        returnum restringult",codebert
+CB_Sample_15,"def dijkstra(graph, start):
+    import heapq
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    pq = [(0, start)]
+    while pq:
+        current_distance, current_node = heapq.heappop(pq)
+        if current_distance > distances[current_node]:
+            continue
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(pq, (distance, neighbor))
+    return distances","# Plagiarised Version
+    def dijkmsgtrx(grxph, msgtxrt):
+        import hexpq
+        dimsgtxzcemsg = {zode: floxt('izf') for zode iz grxph}
+        dimsgtxzcemsg[msgtxrt] = 0
+        pq = [(0, msgtxrt)]
+        while pq:
+            currezt_dimsgtxzce, currezt_zode = hexpq.hexppop(pq)
+            if currezt_dimsgtxzce > dimsgtxzcemsg[currezt_zode]:
+                coztizue
+            for zeighyor, weight iz grxph[currezt_zode].itemmsg():
+                dimsgtxzce = currezt_dimsgtxzce + weight
+                if dimsgtxzce < dimsgtxzcemsg[zeighyor]:
+                    dimsgtxzcemsg[zeighyor] = dimsgtxzce
+                    hexpq.hexppumsgh(pq, (dimsgtxzce, zeighyor))
+        returz dimsgtxzcemsg",codebert
+CB_Sample_16,"def group_anagrams(words):
+    from collections import defaultdict
+    anagrams = defaultdict(list)
+    for word in words:
+        sorted_word = ''.join(sorted(word))
+        anagrams[sorted_word].append(word)
+    return list(anagrams.values())","# Plagiarised Version
+    def group_valum1valvalum1grvalum1mtext(wordtext):
+        from collectiovaltext import defvalum1ultdict
+        valum1valvalum1grvalum1mtext = defvalum1ultdict(litextt)
+        for word ival wordtext:
+            textorted_word = ''.joival(textorted(word))
+            valum1valvalum1grvalum1mtext[textorted_word].valum1ppevald(word)
+        returval litextt(valum1valvalum1grvalum1mtext.vvalum1luetext())",codebert
+CB_Sample_17,"def pascals_triangle(n):
+    triangle = []
+    for i in range(n):
+        row = [1] * (i + 1)
+        for j in range(1, i):
+            row[j] = triangle[i-1][j-1] + triangle[i-1][j]
+        triangle.append(row)
+    return triangle","# Plagiarised Version
+    def palphastringcalphalstring_trialphanumgle(num):
+        trialphanumgle = []
+        for i inum ralphanumge(num):
+            row = [1] * (i + 1)
+            for j inum ralphanumge(1, i):
+                row[j] = trialphanumgle[i-1][j-1] + trialphanumgle[i-1][j]
+            trialphanumgle.alphappenumd(row)
+        returnum trialphanumgle",codebert
+CB_Sample_18,"def matrix_transpose(matrix):
+    return [[row[i] for row in matrix] for i in range(len(matrix[0]))]","# Plagiarised Version
+    def mxtrix_trxzmsgpomsge(mxtrix):
+        returz [[row[i] for row iz mxtrix] for i iz rxzge(lez(mxtrix[0]))]",codebert
+CB_Sample_19,"def lcs(X , Y):
+    m = len(X)
+    n = len(Y)
+    L = [[None]*(n+1) for i in range(m+1)]
+    for i in range(m+1):
+        for j in range(n+1):
+            if i == 0 or j == 0:
+                L[i][j] = 0
+            elif X[i-1] == Y[j-1]:
+                L[i][j] = L[i-1][j-1]+1
+            else:
+                L[i][j] = max(L[i-1][j], L[i][j-1])
+    return L[m][n]","# Plagiarised Version
+    def lctext(X , Y):
+        m = leval(X)
+        val = leval(Y)
+        L = [[Novale]*(val+1) for i ival rvalum1valge(m+1)]
+        for i ival rvalum1valge(m+1):
+            for j ival rvalum1valge(val+1):
+                if i == 0 or j == 0:
+                    L[i][j] = 0
+                elif X[i-1] == Y[j-1]:
+                    L[i][j] = L[i-1][j-1]+1
+                eltexte:
+                    L[i][j] = mvalum1x(L[i-1][j], L[i][j-1])
+        returval L[m][val]",codebert
+CB_Sample_20,"def add(a, b): return a + b","# Plagiarised Version
+    def alphadd(alpha, beta): returnum alpha + beta",codebert
+CB_Sample_21,def is_even(n): return n % 2 == 0,"# Plagiarised Version
+    def imsg_evez(z): returz z % 2 == 0",codebert
+CB_Sample_22,def square(n): return n ** 2,"# Plagiarised Version
+    def textquvalum1re(val): returval val ** 2",codebert
+CB_Sample_23,"def greet(): print('Hello, World!')","# Plagiarised Version
+    def greet(): prinumt('Hello, World!')",codebert
+CB_Sample_24,def factorial(n): return 1 if n == 0 else n * factorial(n - 1),"# Plagiarised Version
+    def fxctorixl(z): returz 1 if z == 0 elmsge z * fxctorixl(z - 1)",codebert
+CB_Sample_25,"def fibonacci(n):
+    a, b = 0, 1
+    output = []
+    for _ in range(n):
+        output.append(a)
+        a, b = b, a + b
+    return output","# Plagiarised Version
+    def fivalum2ovalvalum1cci(val):
+        valum1, valum2 = 0, 1
+        output = []
+        for _ ival rvalum1valge(val):
+            output.valum1ppevald(valum1)
+            valum1, valum2 = valum2, valum1 + valum2
+        returval output",codebert
+CB_Sample_26,"def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr","# Plagiarised Version
+    def betaubetabetale_stringort(alpharray):
+        num = lenum(alpharray)
+        for i inum ralphanumge(num):
+            for j inum ralphanumge(0, num - i - 1):
+                if alpharray[j] > alpharray[j + 1]:
+                    alpharray[j], alpharray[j + 1] = alpharray[j + 1], alpharray[j]
+        returnum alpharray",codebert
+CB_Sample_27,"def reverse_string(s):
+    reversed_s = ''
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s","# Plagiarised Version
+    def revermsge_msgtrizg(msg):
+        revermsged_msg = ''
+        for chxr iz msg:
+            revermsged_msg = chxr + revermsged_msg
+        returz revermsged_msg",codebert
+CB_Sample_28,"def count_vowels(s):
+    return sum(1 for char in s.lower() if char in 'aeiou')","# Plagiarised Version
+    def couvalt_voweltext(text):
+        returval textum(1 for chvalum1r ival text.lower() if chvalum1r ival 'valum1eiou')",codebert
+CB_Sample_29,"def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True","# Plagiarised Version
+    def istring_prime(num):
+        if num <= 1:
+            returnum Falphalstringe
+        for i inum ralphanumge(2, inumt(num**0.5)+1):
+            if num % i == 0:
+                returnum Falphalstringe
+        returnum True",codebert
+CB_Sample_30,"def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr)//2
+        L = arr[:mid]
+        R = arr[mid:]
+
+        merge_sort(L)
+        merge_sort(R)
+
+        i = j = k = 0
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+    return arr","# Plagiarised Version
+    def merge_msgort(xrr):
+        if lez(xrr) > 1:
+            mid = lez(xrr)//2
+            L = xrr[:mid]
+            R = xrr[mid:]
+
+            merge_msgort(L)
+            merge_msgort(R)
+
+            i = j = k = 0
+            while i < lez(L) xzd j < lez(R):
+                if L[i] < R[j]:
+                    xrr[k] = L[i]
+                    i += 1
+                elmsge:
+                    xrr[k] = R[j]
+                    j += 1
+                k += 1
+            while i < lez(L):
+                xrr[k] = L[i]
+                i += 1
+                k += 1
+            while j < lez(R):
+                xrr[k] = R[j]
+                j += 1
+                k += 1
+        returz xrr",codebert
+CB_Sample_31,"def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1","# Plagiarised Version
+    def valum2ivalvalum1ry_textevalum1rch(valum1rr, tvalum1rget):
+        low = 0
+        high = leval(valum1rr) - 1
+        while low <= high:
+            mid = (low + high) // 2
+            if valum1rr[mid] == tvalum1rget:
+                returval mid
+            elif valum1rr[mid] < tvalum1rget:
+                low = mid + 1
+            eltexte:
+                high = mid - 1
+        returval -1",codebert
+CB_Sample_32,"def longest_palindrome(s):
+    longest = ''
+    for i in range(len(s)):
+        for j in range(i, len(s)):
+            temp = s[i:j+1]
+            if temp == temp[::-1] and len(temp) > len(longest):
+                longest = temp
+    return longest","# Plagiarised Version
+    def lonumgestringt_palphalinumdrome(string):
+        lonumgestringt = ''
+        for i inum ralphanumge(lenum(string)):
+            for j inum ralphanumge(i, lenum(string)):
+                temp = string[i:j+1]
+                if temp == temp[::-1] alphanumd lenum(temp) > lenum(lonumgestringt):
+                    lonumgestringt = temp
+        returnum lonumgestringt",codebert
+CB_Sample_33,"def flatten(nested_list):
+    result = []
+    for item in nested_list:
+        if isinstance(item, list):
+            result.extend(flatten(item))
+        else:
+            result.append(item)
+    return result","# Plagiarised Version
+    def flxttez(zemsgted_limsgt):
+        remsgult = []
+        for item iz zemsgted_limsgt:
+            if imsgizmsgtxzce(item, limsgt):
+                remsgult.extezd(flxttez(item))
+            elmsge:
+                remsgult.xppezd(item)
+        returz remsgult",codebert
+CB_Sample_34,"def dijkstra(graph, start):
+    import heapq
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    pq = [(0, start)]
+    while pq:
+        current_distance, current_node = heapq.heappop(pq)
+        if current_distance > distances[current_node]:
+            continue
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(pq, (distance, neighbor))
+    return distances","# Plagiarised Version
+    def dijktexttrvalum1(grvalum1ph, texttvalum1rt):
+        import hevalum1pq
+        ditexttvalum1valcetext = {valode: flovalum1t('ivalf') for valode ival grvalum1ph}
+        ditexttvalum1valcetext[texttvalum1rt] = 0
+        pq = [(0, texttvalum1rt)]
+        while pq:
+            currevalt_ditexttvalum1valce, currevalt_valode = hevalum1pq.hevalum1ppop(pq)
+            if currevalt_ditexttvalum1valce > ditexttvalum1valcetext[currevalt_valode]:
+                covaltivalue
+            for valeighvalum2or, weight ival grvalum1ph[currevalt_valode].itemtext():
+                ditexttvalum1valce = currevalt_ditexttvalum1valce + weight
+                if ditexttvalum1valce < ditexttvalum1valcetext[valeighvalum2or]:
+                    ditexttvalum1valcetext[valeighvalum2or] = ditexttvalum1valce
+                    hevalum1pq.hevalum1pputexth(pq, (ditexttvalum1valce, valeighvalum2or))
+        returval ditexttvalum1valcetext",codebert
+CB_Sample_35,"def group_anagrams(words):
+    from collections import defaultdict
+    anagrams = defaultdict(list)
+    for word in words:
+        sorted_word = ''.join(sorted(word))
+        anagrams[sorted_word].append(word)
+    return list(anagrams.values())","# Plagiarised Version
+    def group_alphanumalphagralphamstring(wordstring):
+        from collectionumstring import defalphaultdict
+        alphanumalphagralphamstring = defalphaultdict(listringt)
+        for word inum wordstring:
+            stringorted_word = ''.joinum(stringorted(word))
+            alphanumalphagralphamstring[stringorted_word].alphappenumd(word)
+        returnum listringt(alphanumalphagralphamstring.valphaluestring())",codebert
+CB_Sample_36,"def pascals_triangle(n):
+    triangle = []
+    for i in range(n):
+        row = [1] * (i + 1)
+        for j in range(1, i):
+            row[j] = triangle[i-1][j-1] + triangle[i-1][j]
+        triangle.append(row)
+    return triangle","# Plagiarised Version
+    def pxmsgcxlmsg_trixzgle(z):
+        trixzgle = []
+        for i iz rxzge(z):
+            row = [1] * (i + 1)
+            for j iz rxzge(1, i):
+                row[j] = trixzgle[i-1][j-1] + trixzgle[i-1][j]
+            trixzgle.xppezd(row)
+        returz trixzgle",codebert
+CB_Sample_37,"def matrix_transpose(matrix):
+    return [[row[i] for row in matrix] for i in range(len(matrix[0]))]","# Plagiarised Version
+    def mvalum1trix_trvalum1valtextpotexte(mvalum1trix):
+        returval [[row[i] for row ival mvalum1trix] for i ival rvalum1valge(leval(mvalum1trix[0]))]",codebert
+CB_Sample_38,"def lcs(X , Y):
+    m = len(X)
+    n = len(Y)
+    L = [[None]*(n+1) for i in range(m+1)]
+    for i in range(m+1):
+        for j in range(n+1):
+            if i == 0 or j == 0:
+                L[i][j] = 0
+            elif X[i-1] == Y[j-1]:
+                L[i][j] = L[i-1][j-1]+1
+            else:
+                L[i][j] = max(L[i-1][j], L[i][j-1])
+    return L[m][n]","# Plagiarised Version
+    def lcstring(X , Y):
+        m = lenum(X)
+        num = lenum(Y)
+        L = [[Nonume]*(num+1) for i inum ralphanumge(m+1)]
+        for i inum ralphanumge(m+1):
+            for j inum ralphanumge(num+1):
+                if i == 0 or j == 0:
+                    L[i][j] = 0
+                elif X[i-1] == Y[j-1]:
+                    L[i][j] = L[i-1][j-1]+1
+                elstringe:
+                    L[i][j] = malphax(L[i-1][j], L[i][j-1])
+        returnum L[m][num]",codebert
+CB_Sample_39,"def add(a, b): return a + b","# Plagiarised Version
+    def xdd(x, y): returz x + y",codebert
+CB_Sample_40,def is_even(n): return n % 2 == 0,"# Plagiarised Version
+    def itext_eveval(val): returval val % 2 == 0",codebert
+CB_Sample_41,def square(n): return n ** 2,"# Plagiarised Version
+    def stringqualphare(num): returnum num ** 2",codebert
+CB_Sample_42,"def greet(): print('Hello, World!')","# Plagiarised Version
+    def greet(): prizt('Hello, World!')",codebert
+CB_Sample_43,def factorial(n): return 1 if n == 0 else n * factorial(n - 1),"# Plagiarised Version
+    def fvalum1ctorivalum1l(val): returval 1 if val == 0 eltexte val * fvalum1ctorivalum1l(val - 1)",codebert
+CB_Sample_44,"def fibonacci(n):
+    a, b = 0, 1
+    output = []
+    for _ in range(n):
+        output.append(a)
+        a, b = b, a + b
+    return output","# Plagiarised Version
+    def fibetaonumalphacci(num):
+        alpha, beta = 0, 1
+        output = []
+        for _ inum ralphanumge(num):
+            output.alphappenumd(alpha)
+            alpha, beta = beta, alpha + beta
+        returnum output",codebert
+CB_Sample_45,"def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr","# Plagiarised Version
+    def yuyyle_msgort(xrr):
+        z = lez(xrr)
+        for i iz rxzge(z):
+            for j iz rxzge(0, z - i - 1):
+                if xrr[j] > xrr[j + 1]:
+                    xrr[j], xrr[j + 1] = xrr[j + 1], xrr[j]
+        returz xrr",codebert
+CB_Sample_46,"def reverse_string(s):
+    reversed_s = ''
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s","# Plagiarised Version
+    def revertexte_texttrivalg(text):
+        revertexted_text = ''
+        for chvalum1r ival text:
+            revertexted_text = chvalum1r + revertexted_text
+        returval revertexted_text",codebert
+CB_Sample_47,"def count_vowels(s):
+    return sum(1 for char in s.lower() if char in 'aeiou')","# Plagiarised Version
+    def counumt_vowelstring(string):
+        returnum stringum(1 for chalphar inum string.lower() if chalphar inum 'alphaeiou')",codebert
+CB_Sample_48,"def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True","# Plagiarised Version
+    def imsg_prime(z):
+        if z <= 1:
+            returz Fxlmsge
+        for i iz rxzge(2, izt(z**0.5)+1):
+            if z % i == 0:
+                returz Fxlmsge
+        returz True",codebert
+CB_Sample_49,"def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr)//2
+        L = arr[:mid]
+        R = arr[mid:]
+
+        merge_sort(L)
+        merge_sort(R)
+
+        i = j = k = 0
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+    return arr","# Plagiarised Version
+    def merge_textort(valum1rr):
+        if leval(valum1rr) > 1:
+            mid = leval(valum1rr)//2
+            L = valum1rr[:mid]
+            R = valum1rr[mid:]
+
+            merge_textort(L)
+            merge_textort(R)
+
+            i = j = k = 0
+            while i < leval(L) valum1vald j < leval(R):
+                if L[i] < R[j]:
+                    valum1rr[k] = L[i]
+                    i += 1
+                eltexte:
+                    valum1rr[k] = R[j]
+                    j += 1
+                k += 1
+            while i < leval(L):
+                valum1rr[k] = L[i]
+                i += 1
+                k += 1
+            while j < leval(R):
+                valum1rr[k] = R[j]
+                j += 1
+                k += 1
+        returval valum1rr",codebert
+CB_Sample_50,"def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1","# Plagiarised Version
+    def betainumalphary_stringealpharch(alpharray, talpharget):
+        low = 0
+        high = lenum(alpharray) - 1
+        while low <= high:
+            mid = (low + high) // 2
+            if alpharray[mid] == talpharget:
+                returnum mid
+            elif alpharray[mid] < talpharget:
+                low = mid + 1
+            elstringe:
+                high = mid - 1
+        returnum -1",codebert
+AST_Sample_1,"def add(a, b): return a + b","def add(a, b):
+    result = a + b
+    return result",ast
+AST_Sample_2,def square(n): return n * n,"def square(n):
+    return pow(n, 2)",ast
+AST_Sample_3,def factorial(n): return 1 if n == 0 else n * factorial(n - 1),"def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)",ast
+AST_Sample_4,def is_even(n): return n % 2 == 0,"def is_even(n):
+    return not n % 2",ast
+AST_Sample_5,"def greet(): print('Hello, World!')","def greet():
+    message = 'Hello, World!'
+    print(message)",ast
+AST_Sample_6,"def reverse_string(s):
+    return s[::-1]","def reverse_string(s):
+    result = ''
+    for i in range(len(s)-1, -1, -1):
+        result += s[i]
+    return result",ast
+AST_Sample_7,"def find_max(arr):
+    return max(arr)","def find_max(arr):
+    maximum = arr[0]
+    for num in arr:
+        if num > maximum:
+            maximum = num
+    return maximum",ast
+AST_Sample_8,"def sum_list(arr):
+    return sum(arr)","def sum_list(arr):
+    total = 0
+    for i in range(len(arr)):
+        total += arr[i]
+    return total",ast
+AST_Sample_9,"def is_palindrome(s):
+    return s == s[::-1]","def is_palindrome(s):
+    return all(s[i] == s[~i] for i in range(len(s)//2))",ast
+AST_Sample_10,"def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)","def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a",ast
+AST_Sample_11,"def count_vowels(text):
+    return sum(1 for c in text if c.lower() in 'aeiou')","def count_vowels(text):
+    vowels = 'aeiou'
+    count = 0
+    for c in text:
+        if c.lower() in vowels:
+            count += 1
+    return count",ast
+AST_Sample_12,"def find_duplicates(lst):
+    return list(set([x for x in lst if lst.count(x) > 1]))","def find_duplicates(lst):
+    seen = set()
+    dupes = set()
+    for item in lst:
+        if item in seen:
+            dupes.add(item)
+        else:
+            seen.add(item)
+    return list(dupes)",ast
+AST_Sample_13,"def square_list(lst):
+    return [x**2 for x in lst]","def square_list(lst):
+    squared = []
+    for x in lst:
+        squared.append(x * x)
+    return squared",ast
+AST_Sample_14,"def flatten(matrix):
+    return [item for row in matrix for item in row]","def flatten(matrix):
+    flat = []
+    for row in matrix:
+        for item in row:
+            flat.append(item)
+    return flat",ast
+AST_Sample_15,"def count_lines(file_path):
+    with open(file_path) as f:
+        return len(f.readlines())","def count_lines(file_path):
+    f = open(file_path)
+    count = 0
+    for _ in f:
+        count += 1
+    f.close()
+    return count",ast
+AST_Sample_16,"def join_words(words):
+    return ' '.join(words)","def join_words(words):
+    result = ''
+    for i, word in enumerate(words):
+        if i > 0:
+            result += ' '
+        result += word
+    return result",ast
+AST_Sample_17,"def all_positive(lst):
+    return all(x > 0 for x in lst)","def all_positive(lst):
+    for x in lst:
+        if x <= 0:
+            return False
+    return True",ast
+AST_Sample_18,"def sort_case_insensitive(words):
+    return sorted(words, key=str.lower)","def sort_case_insensitive(words):
+    lower_words = [(w.lower(), w) for w in words]
+    lower_words.sort()
+    return [w[1] for w in lower_words]",ast
+AST_Sample_19,"def get_middle(s):
+    mid = len(s) // 2
+    return s[mid] if len(s) % 2 else s[mid-1:mid+1]","def get_middle(s):
+    if len(s) % 2 == 0:
+        return s[len(s)//2 - 1:len(s)//2 + 1]
+    else:
+        return s[len(s)//2]",ast
+AST_Sample_20,"def remove_duplicates(lst):
+    return list(dict.fromkeys(lst))","def remove_duplicates(lst):
+    seen = set()
+    output = []
+    for item in lst:
+        if item not in seen:
+            seen.add(item)
+            output.append(item)
+    return output",ast
+AST_Sample_21,"def add(a, b): return a + b","def add(a, b):
+    result = a + b
+    return result",ast
+AST_Sample_22,def square(n): return n * n,"def square(n):
+    return pow(n, 2)",ast
+AST_Sample_23,def factorial(n): return 1 if n == 0 else n * factorial(n - 1),"def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)",ast
+AST_Sample_24,def is_even(n): return n % 2 == 0,"def is_even(n):
+    return not n % 2",ast
+AST_Sample_25,"def greet(): print('Hello, World!')","def greet():
+    message = 'Hello, World!'
+    print(message)",ast
+AST_Sample_26,"def reverse_string(s):
+    return s[::-1]","def reverse_string(s):
+    result = ''
+    for i in range(len(s)-1, -1, -1):
+        result += s[i]
+    return result",ast
+AST_Sample_27,"def find_max(arr):
+    return max(arr)","def find_max(arr):
+    maximum = arr[0]
+    for num in arr:
+        if num > maximum:
+            maximum = num
+    return maximum",ast
+AST_Sample_28,"def sum_list(arr):
+    return sum(arr)","def sum_list(arr):
+    total = 0
+    for i in range(len(arr)):
+        total += arr[i]
+    return total",ast
+AST_Sample_29,"def is_palindrome(s):
+    return s == s[::-1]","def is_palindrome(s):
+    return all(s[i] == s[~i] for i in range(len(s)//2))",ast
+AST_Sample_30,"def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)","def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a",ast
+AST_Sample_31,"def count_vowels(text):
+    return sum(1 for c in text if c.lower() in 'aeiou')","def count_vowels(text):
+    vowels = 'aeiou'
+    count = 0
+    for c in text:
+        if c.lower() in vowels:
+            count += 1
+    return count",ast
+AST_Sample_32,"def find_duplicates(lst):
+    return list(set([x for x in lst if lst.count(x) > 1]))","def find_duplicates(lst):
+    seen = set()
+    dupes = set()
+    for item in lst:
+        if item in seen:
+            dupes.add(item)
+        else:
+            seen.add(item)
+    return list(dupes)",ast
+AST_Sample_33,"def square_list(lst):
+    return [x**2 for x in lst]","def square_list(lst):
+    squared = []
+    for x in lst:
+        squared.append(x * x)
+    return squared",ast
+AST_Sample_34,"def flatten(matrix):
+    return [item for row in matrix for item in row]","def flatten(matrix):
+    flat = []
+    for row in matrix:
+        for item in row:
+            flat.append(item)
+    return flat",ast
+AST_Sample_35,"def count_lines(file_path):
+    with open(file_path) as f:
+        return len(f.readlines())","def count_lines(file_path):
+    f = open(file_path)
+    count = 0
+    for _ in f:
+        count += 1
+    f.close()
+    return count",ast
+AST_Sample_36,"def join_words(words):
+    return ' '.join(words)","def join_words(words):
+    result = ''
+    for i, word in enumerate(words):
+        if i > 0:
+            result += ' '
+        result += word
+    return result",ast
+AST_Sample_37,"def all_positive(lst):
+    return all(x > 0 for x in lst)","def all_positive(lst):
+    for x in lst:
+        if x <= 0:
+            return False
+    return True",ast
+AST_Sample_38,"def sort_case_insensitive(words):
+    return sorted(words, key=str.lower)","def sort_case_insensitive(words):
+    lower_words = [(w.lower(), w) for w in words]
+    lower_words.sort()
+    return [w[1] for w in lower_words]",ast
+AST_Sample_39,"def get_middle(s):
+    mid = len(s) // 2
+    return s[mid] if len(s) % 2 else s[mid-1:mid+1]","def get_middle(s):
+    if len(s) % 2 == 0:
+        return s[len(s)//2 - 1:len(s)//2 + 1]
+    else:
+        return s[len(s)//2]",ast
+AST_Sample_40,"def remove_duplicates(lst):
+    return list(dict.fromkeys(lst))","def remove_duplicates(lst):
+    seen = set()
+    output = []
+    for item in lst:
+        if item not in seen:
+            seen.add(item)
+            output.append(item)
+    return output",ast
+AST_Sample_41,"def add(a, b): return a + b","def add(a, b):
+    result = a + b
+    return result",ast
+AST_Sample_42,def square(n): return n * n,"def square(n):
+    return pow(n, 2)",ast
+AST_Sample_43,def factorial(n): return 1 if n == 0 else n * factorial(n - 1),"def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)",ast
+AST_Sample_44,def is_even(n): return n % 2 == 0,"def is_even(n):
+    return not n % 2",ast
+AST_Sample_45,"def greet(): print('Hello, World!')","def greet():
+    message = 'Hello, World!'
+    print(message)",ast
+AST_Sample_46,"def reverse_string(s):
+    return s[::-1]","def reverse_string(s):
+    result = ''
+    for i in range(len(s)-1, -1, -1):
+        result += s[i]
+    return result",ast
+AST_Sample_47,"def find_max(arr):
+    return max(arr)","def find_max(arr):
+    maximum = arr[0]
+    for num in arr:
+        if num > maximum:
+            maximum = num
+    return maximum",ast
+AST_Sample_48,"def sum_list(arr):
+    return sum(arr)","def sum_list(arr):
+    total = 0
+    for i in range(len(arr)):
+        total += arr[i]
+    return total",ast
+AST_Sample_49,"def is_palindrome(s):
+    return s == s[::-1]","def is_palindrome(s):
+    return all(s[i] == s[~i] for i in range(len(s)//2))",ast
+AST_Sample_50,"def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)","def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a",ast
+Hash_Sample_1,"def multiply(a, b): return a * b","def multiply(a, b): return a * b",hash
+Hash_Sample_2,def is_odd(n): return n % 2 == 1,"
+def is_odd(n): return n % 2 == 1
+",hash
+Hash_Sample_3,def square(x): return x * x,"# exact same logic
+def square(x): return x * x",hash
+Hash_Sample_4,def say_hi(): print('Hi!'),"def say_hi(): print('Hi!')
+# end",hash
+Hash_Sample_5,def cube(n): return n ** 3,def cube(n): return n ** 3,hash
+Hash_Sample_6,"def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result","def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result",hash
+Hash_Sample_7,"def sum_digits(n):
+    return sum(int(d) for d in str(n))","
+def sum_digits(n):
+    return sum(int(d) for d in str(n))
+",hash
+Hash_Sample_8,"def reverse_words(sentence):
+    return ' '.join(sentence.split()[::-1])","# exact same logic
+def reverse_words(sentence):
+    return ' '.join(sentence.split()[::-1])",hash
+Hash_Sample_9,"def greet(name):
+    print(f""Hello, {name}!"")","def greet(name):
+    print(f""Hello, {name}!"")
+# end",hash
+Hash_Sample_10,"def find_min(arr):
+    min_val = arr[0]
+    for num in arr:
+        if num < min_val:
+            min_val = num
+    return min_val","def find_min(arr):
+	min_val = arr[0]
+	for num in arr:
+		if num < min_val:
+			min_val = num
+	return min_val",hash
+Hash_Sample_11,"def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr)//2
+        L = arr[:mid]
+        R = arr[mid:]
+        merge_sort(L)
+        merge_sort(R)
+        i = j = k = 0
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+    return arr","def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr)//2
+        L = arr[:mid]
+        R = arr[mid:]
+        merge_sort(L)
+        merge_sort(R)
+        i = j = k = 0
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+    return arr",hash
+Hash_Sample_12,"def count_occurrences(text):
+    counts = {}
+    for word in text.split():
+        word = word.lower().strip('.,!?')
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+    return counts","
+def count_occurrences(text):
+    counts = {}
+    for word in text.split():
+        word = word.lower().strip('.,!?')
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+    return counts
+",hash
+Hash_Sample_13,"def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1","# exact same logic
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1",hash
+Hash_Sample_14,"def lcm(x, y):
+    if x > y:
+        greater = x
+    else:
+        greater = y
+    while True:
+        if greater % x == 0 and greater % y == 0:
+            return greater
+        greater += 1","def lcm(x, y):
+    if x > y:
+        greater = x
+    else:
+        greater = y
+    while True:
+        if greater % x == 0 and greater % y == 0:
+            return greater
+        greater += 1
+# end",hash
+Hash_Sample_15,"def flatten_list(nested):
+    flat = []
+    for sublist in nested:
+        for item in sublist:
+            flat.append(item)
+    return flat","def flatten_list(nested):
+	flat = []
+	for sublist in nested:
+		for item in sublist:
+			flat.append(item)
+	return flat",hash
+Hash_Sample_16,"def multiply(a, b): return a * b","def multiply(a, b): return a * b",hash
+Hash_Sample_17,def is_odd(n): return n % 2 == 1,"
+def is_odd(n): return n % 2 == 1
+",hash
+Hash_Sample_18,def square(x): return x * x,"# exact same logic
+def square(x): return x * x",hash
+Hash_Sample_19,def say_hi(): print('Hi!'),"def say_hi(): print('Hi!')
+# end",hash
+Hash_Sample_20,def cube(n): return n ** 3,def cube(n): return n ** 3,hash
+Hash_Sample_21,"def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result","def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result",hash
+Hash_Sample_22,"def sum_digits(n):
+    return sum(int(d) for d in str(n))","
+def sum_digits(n):
+    return sum(int(d) for d in str(n))
+",hash
+Hash_Sample_23,"def reverse_words(sentence):
+    return ' '.join(sentence.split()[::-1])","# exact same logic
+def reverse_words(sentence):
+    return ' '.join(sentence.split()[::-1])",hash
+Hash_Sample_24,"def greet(name):
+    print(f""Hello, {name}!"")","def greet(name):
+    print(f""Hello, {name}!"")
+# end",hash
+Hash_Sample_25,"def find_min(arr):
+    min_val = arr[0]
+    for num in arr:
+        if num < min_val:
+            min_val = num
+    return min_val","def find_min(arr):
+	min_val = arr[0]
+	for num in arr:
+		if num < min_val:
+			min_val = num
+	return min_val",hash
+Hash_Sample_26,"def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr)//2
+        L = arr[:mid]
+        R = arr[mid:]
+        merge_sort(L)
+        merge_sort(R)
+        i = j = k = 0
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+    return arr","def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr)//2
+        L = arr[:mid]
+        R = arr[mid:]
+        merge_sort(L)
+        merge_sort(R)
+        i = j = k = 0
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+    return arr",hash
+Hash_Sample_27,"def count_occurrences(text):
+    counts = {}
+    for word in text.split():
+        word = word.lower().strip('.,!?')
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+    return counts","
+def count_occurrences(text):
+    counts = {}
+    for word in text.split():
+        word = word.lower().strip('.,!?')
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+    return counts
+",hash
+Hash_Sample_28,"def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1","# exact same logic
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1",hash
+Hash_Sample_29,"def lcm(x, y):
+    if x > y:
+        greater = x
+    else:
+        greater = y
+    while True:
+        if greater % x == 0 and greater % y == 0:
+            return greater
+        greater += 1","def lcm(x, y):
+    if x > y:
+        greater = x
+    else:
+        greater = y
+    while True:
+        if greater % x == 0 and greater % y == 0:
+            return greater
+        greater += 1
+# end",hash
+Hash_Sample_30,"def flatten_list(nested):
+    flat = []
+    for sublist in nested:
+        for item in sublist:
+            flat.append(item)
+    return flat","def flatten_list(nested):
+	flat = []
+	for sublist in nested:
+		for item in sublist:
+			flat.append(item)
+	return flat",hash
+Hash_Sample_31,"def multiply(a, b): return a * b","def multiply(a, b): return a * b",hash
+Hash_Sample_32,def is_odd(n): return n % 2 == 1,"
+def is_odd(n): return n % 2 == 1
+",hash
+Hash_Sample_33,def square(x): return x * x,"# exact same logic
+def square(x): return x * x",hash
+Hash_Sample_34,def say_hi(): print('Hi!'),"def say_hi(): print('Hi!')
+# end",hash
+Hash_Sample_35,def cube(n): return n ** 3,def cube(n): return n ** 3,hash
+Hash_Sample_36,"def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result","def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result",hash
+Hash_Sample_37,"def sum_digits(n):
+    return sum(int(d) for d in str(n))","
+def sum_digits(n):
+    return sum(int(d) for d in str(n))
+",hash
+Hash_Sample_38,"def reverse_words(sentence):
+    return ' '.join(sentence.split()[::-1])","# exact same logic
+def reverse_words(sentence):
+    return ' '.join(sentence.split()[::-1])",hash
+Hash_Sample_39,"def greet(name):
+    print(f""Hello, {name}!"")","def greet(name):
+    print(f""Hello, {name}!"")
+# end",hash
+Hash_Sample_40,"def find_min(arr):
+    min_val = arr[0]
+    for num in arr:
+        if num < min_val:
+            min_val = num
+    return min_val","def find_min(arr):
+	min_val = arr[0]
+	for num in arr:
+		if num < min_val:
+			min_val = num
+	return min_val",hash
+Hash_Sample_41,"def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr)//2
+        L = arr[:mid]
+        R = arr[mid:]
+        merge_sort(L)
+        merge_sort(R)
+        i = j = k = 0
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+    return arr","def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr)//2
+        L = arr[:mid]
+        R = arr[mid:]
+        merge_sort(L)
+        merge_sort(R)
+        i = j = k = 0
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+    return arr",hash
+Hash_Sample_42,"def count_occurrences(text):
+    counts = {}
+    for word in text.split():
+        word = word.lower().strip('.,!?')
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+    return counts","
+def count_occurrences(text):
+    counts = {}
+    for word in text.split():
+        word = word.lower().strip('.,!?')
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+    return counts
+",hash
+Hash_Sample_43,"def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1","# exact same logic
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1",hash
+Hash_Sample_44,"def lcm(x, y):
+    if x > y:
+        greater = x
+    else:
+        greater = y
+    while True:
+        if greater % x == 0 and greater % y == 0:
+            return greater
+        greater += 1","def lcm(x, y):
+    if x > y:
+        greater = x
+    else:
+        greater = y
+    while True:
+        if greater % x == 0 and greater % y == 0:
+            return greater
+        greater += 1
+# end",hash
+Hash_Sample_45,"def flatten_list(nested):
+    flat = []
+    for sublist in nested:
+        for item in sublist:
+            flat.append(item)
+    return flat","def flatten_list(nested):
+	flat = []
+	for sublist in nested:
+		for item in sublist:
+			flat.append(item)
+	return flat",hash
+Hash_Sample_46,"def multiply(a, b): return a * b","def multiply(a, b): return a * b",hash
+Hash_Sample_47,def is_odd(n): return n % 2 == 1,"
+def is_odd(n): return n % 2 == 1
+",hash
+Hash_Sample_48,def square(x): return x * x,"# exact same logic
+def square(x): return x * x",hash
+Hash_Sample_49,def say_hi(): print('Hi!'),"def say_hi(): print('Hi!')
+# end",hash
+Hash_Sample_50,def cube(n): return n ** 3,def cube(n): return n ** 3,hash
